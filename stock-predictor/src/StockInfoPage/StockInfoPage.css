@@ -1,0 +1,141 @@
+/* Individual Section Containers */
+.stock-company-name-container,
+.stock-company-info-container,
+.financial-status-container,
+.chart-container,
+.predict-button-container {
+    width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.predict-stocks-loading{
+    color: #333;
+}
+
+/* Stock Company Name Container */
+.stock-company-name-container {
+    text-align: center;
+}
+
+.stock-company-name-container h1 {
+    font-size: 36px;
+    color: #00b386;
+}
+
+/* Stock Company Info Container */
+.stock-company-info-container {
+    padding: 10px;
+}
+
+.stock-company-info-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 10px 0;
+}
+
+.stock-company-info-container p strong {
+    color: #333;
+}
+
+/* Financial Status Container */
+.financial-status-container {
+    padding: 10px;
+}
+
+.financial-status-container h2 {
+    font-size: 24px;
+    color: #00b386;
+    margin-bottom: 15px;
+}
+
+.financial-status-container p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Chart Container */
+.chart-container {
+    padding: 10px;
+}
+
+.chart-container h2 {
+    font-size: 24px;
+    color: #00b386;
+    margin-bottom: 15px;
+}
+
+/* Predict Button Container */
+.predict-button-container {
+    text-align: center;
+}
+
+.predict-button {
+    background-color: #00b386;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.predict-button:hover {
+    background-color: #009966;
+}
+
+/* Link Styling */
+.stock-company-info-container a {
+    color: #00b386;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.stock-company-info-container a:hover {
+    text-decoration: underline;
+}
+
+/* Loading & Error Messages */
+.spinner {
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.error-message-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 100px); /* Adjust height to fit between Navbar and Footer */
+    padding: 20px;
+}
+
+.error-message {
+    color: #d9534f; /* Bootstrap danger color */
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f2dede; /* Light red background */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #d9534f; /* Border color matching the text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container-wrapper {
+        padding: 15px;
+    }
+
+    .stock-company-name-container h1 {
+        font-size: 28px;
+    }
+
+    .financial-status-container h2 {
+        font-size: 20px;
+    }
+}

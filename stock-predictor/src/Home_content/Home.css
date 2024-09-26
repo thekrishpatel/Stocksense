@@ -1,0 +1,211 @@
+/* src/HomePage.css */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen+Mono&display=swap');
+
+.homepage {
+  text-align: center;
+}
+
+.content {
+  margin-top: 30px;
+  /* Reduced margin-top */
+}
+
+.title {
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+  color: #44475B;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: gray;
+  margin-bottom: 20px;
+  /* Reduced margin-bottom */
+}
+
+.get-started-btn {
+  background-color: #00a884;
+  color: white;
+  padding: 12px 24px;
+  /* Adjusted padding if needed */
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  /* Remove any margin */
+}
+
+.get-started-btn:hover {
+  background-color: #007f64;
+}
+
+
+.container {
+  margin-top: 0px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cityScapeImage1 {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  /* Remove any top margin */
+}
+
+
+/* SVG styling and animation */
+svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  animation: rotate infinite 5s linear;
+}
+
+/* src/FinancePage.css */
+.finance-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.left-section {
+  max-width: 50%;
+}
+
+.icon {
+  float: left;
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+  color: #44475B;
+}
+
+.description {
+  font-size: 16px;
+  color: gray;
+  margin-bottom: 40px;
+  font-family: "Oxygen Mono";
+  font-weight: 600;
+  color: #44475B;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.option img {
+  width: 30px;
+  margin-right: 15px;
+}
+
+/* Hover Effect */
+.option:hover {
+
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  /* Slight shadow on hover */
+}
+
+.right-section {
+  max-width: 40%;
+}
+
+.phone-img {
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 15px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #cb9725;
+  /* Matches your theme color */
+}
+
+.footer-links {
+  margin-top: 15px;
+}
+
+.footer-links a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #cb9725;
+  /* Matches your theme color */
+}
+
+.footer-info {
+  margin-top: 20px;
+  font-size: 14px;
+}
+body{
+  overflow-x: hidden;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+.movingElement {
+    display: block;
+    animation: moveUpDown 2s infinite ease-in-out;
+}

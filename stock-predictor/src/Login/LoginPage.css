@@ -1,0 +1,168 @@
+/* LoginPage.css */
+.login-container {
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f8fa;
+  font-family: 'Arial', sans-serif;
+  }
+  
+  .login-content {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .login-left {
+    flex: 1;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .login-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .login-right {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    color: #6c757d;
+    margin-bottom: 20px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .actions label {
+    color: #6c757d;
+  }
+  
+  .actions a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .actions a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00a884;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-button:hover {
+    background-color: #007f64;
+  }
+  
+  .signup-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-link p {
+    color: #6c757d;
+  }
+  
+  .signup-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .signup-link a:hover {
+    text-decoration: underline;
+  }
+  
+  .divider-container {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .divider {
+    flex: 1;
+    border-top: 1px solid ; /* Divider line color */
+  }
+  
+  .divider-text {
+    margin: 0 15px; /* Space around the "or" text */
+     /* Color for the "or" text */
+    font-size: 14px;
+  }
+  
+  .social-login {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icon {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #495057;
+  }
+  
+  .social-icon:hover {
+    color: #007bff;
+  }
+
+  @keyframes slideIn {
+    from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the login container */
+.login-container {
+    animation: slideIn 0.7s ease-out;
+}

@@ -1,0 +1,191 @@
+/* Navbar.css */
+.navbar-container-unique {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-unique {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+}
+
+.logo-container-unique {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo-unique {
+    width: 40px;
+    height: auto;
+}
+
+.logo-name-unique {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #00b386;
+}
+
+.nav-links-unique {
+    display: flex;
+    align-items: center;
+}
+
+.search-container-unique {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.search-input-unique {
+    width: 0;
+    opacity: 0;
+    padding: 10px;
+    padding-right: 30px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.search-container-unique:hover .search-input-unique {
+    width: 200px;
+    opacity: 1;
+    padding-left: 30px; /* Adjust padding to make room for the icon */
+    cursor: pointer;
+}
+
+.search-icon-unique {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding-left: 10px;
+    color: gray;
+    cursor: pointer;
+}
+
+.search-icon-unique:hover {
+    color: #00b386;
+}
+
+.login-btn-unique {
+    background-color: #00b386;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn-unique:hover {
+    background-color: #009966;
+}
+
+.nav-button-unique {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #00b386;
+    font-weight: bold;
+    padding: 30px;
+}
+
+.nav-button-unique:hover {
+    color: #009966;
+}
+
+.suggestions-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+/* Suggestion Item */
+.suggestion-item-unique {
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.suggestion-item-unique:hover {
+    background-color: #f0f8ff;
+}
+
+.navbar-profile {
+    display: flex;
+    align-items: center;
+    position: relative; /* Position relative to contain the logout button */
+}
+
+.navbar-profile a {
+    text-decoration: none; /* Removes the underline from the link */
+    margin-right: 10px;
+    color: #00b386;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.navbar-profile a :hover{
+    color: #009966;
+    cursor: pointer;
+}
+
+
+.profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Logout button styling */
+.logout-button {
+    background-color: #dc3545; /* Red color for logout */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    position: absolute;
+    top: 50px; /* Adjust positioning as needed */
+    right: 0; /* Align to the right of the profile picture */
+    display: none; /* Initially hidden */
+    transition: opacity 0.3s ease, display 0.3s ease;
+}
+
+.logout-button {
+    position: absolute; /* Position it absolutely within the parent */
+    top: 100%; /* Position it below the parent element */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* Smooth transition */
+    transition-delay: 1s; /* Delay showing the button */
+}
+
+.navbar-profile:hover .logout-button,
+.navbar-profile .logout-button:hover {
+    display: block; /* Ensure the button is displayed */
+    opacity: 1; /* Make button fully opaque */
+    visibility: visible; /* Make button visible */
+    transition-delay: 0s; /* Remove the delay when hovering over the button */
+}
