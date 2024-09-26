@@ -7,7 +7,7 @@ def fetch_and_cache_news():
     global news_articles_cache
     url = "https://share-market-news-api-india.p.rapidapi.com/marketNews"
     headers = {
-        "x-rapidapi-key": "dad1cda000msh0aed20de6c1b4a6p12de97jsn58b906584cbd",  # Replace with your actual API key
+        "x-rapidapi-key": "",  # Replace with your actual API key
         "x-rapidapi-host": "share-market-news-api-india.p.rapidapi.com"
     }
     
