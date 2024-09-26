@@ -20,19 +20,28 @@ Before you begin, ensure you have met the following requirements:
 
    ```bash
    git clone https://github.com/your-username/stock-predictor.git
-cd stock-predictor
 
+```bash
+   cd stock-predictor
+
+```bash
 npm install
+```bash
 
+```bash
 cd Backend
 pip install -r requirements.txt
 
+```bash
 cd Backend
 
+```bash
 python app.py
 
+```bash
 cd ../
 
+```bash
 npm start
 
 
